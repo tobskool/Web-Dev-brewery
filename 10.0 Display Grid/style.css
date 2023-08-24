@@ -1,0 +1,42 @@
+/* CHESSBOARD CSS*/
+
+* {
+    background-color: rgb(146, 56, 154);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ; 
+    gap: 0px;
+    width: 800px;
+    height: 800px;
+}
+
+/* when row is auto - it fits content */
+/* when column is auto, it fits to 100% width (responsive)  */
+
+/* Grid-template property does 2 in one, rows first columns 2nd */
+
+/* Grid-auto-rows/columns --- can define the size of unacconted divs/elements */
+
+/* grid-template-columns 200px minmax(400px,900px) */
+
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 0px;
+} */
+
+.black {
+    background-color: #b58863;
+    width: 100px;
+    height: 100px;
+}
+
+.white {
+    background-color: #f0d9b5;
+    width: 100px;
+    height: 100px;
+}

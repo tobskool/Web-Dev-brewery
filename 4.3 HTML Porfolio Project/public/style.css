@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-align: end;
+}

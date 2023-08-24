@@ -1,0 +1,38 @@
+/* em = relative size to parent
+rem = relative size to root  */
+
+.color-title {
+    font-weight: normal;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+#red {
+    color: red;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 30px;
+    border: 10px solid black; /* instead of solid, you can do dashed */
+    border-bottom: 0px;
+}
+
+#blue {
+    color: blue;
+    border: 10px solid black;
+    border-width: 0px 10px 20px 40px; /* no commas, goes clockwise */
+    padding: 25px; /* padding is inside, margin is outside */
+    margin: 10px;
+
+}
+#orange {
+    color: orange;
+}
+#green {
+    color: green;
+}
+#yellow {
+    color: yellow;
+}
