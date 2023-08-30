@@ -1,0 +1,20 @@
+/* Don't change the existing CSS. */
+
+html 
+{ 
+  background: linear-gradient(63deg, rgba(38,51,176,1) 13%, rgba(255,255,255,1) 175%);
+  background-repeat: no-repeat ;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
