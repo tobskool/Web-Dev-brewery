@@ -104,6 +104,8 @@ function makeSound(key) {
 
 function buttonAnimation(currentkey) {
     var active_button = document.querySelector("." + currentkey);
-    active_button = active_button.classList.add(".pressed")
-
-}
+    /* active_button = */ active_button.classList.add("pressed");
+    setTimeout(function() {
+        active_button.classList.remove("pressed")
+    }, 1000);
+};
