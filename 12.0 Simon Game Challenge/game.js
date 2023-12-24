@@ -11,12 +11,28 @@ var randomChosenColour = buttonColours[Math.floor(Math.random()*buttonColours.le
 
 gamePattern.push(randomChosenColour);
 
-$("#" + randomChosenColour)
+$(document).ready(function() {
 
-// active_button.classList.add("pressed");
-//     setTimeout(function() {
-//         active_button.classList.remove("pressed")
-//     }, 1000);
+$("#" + randomChosenColour).addClass("flash");
+setTimeout(function() {
+   $("#" + randomChosenColour).removeClass("flash");
+
+switch (randomChosenColour) {
+   case "blue":
+       playBlue();
+       break;
+   case "red":
+       playRed();
+       break;
+   case "yellow":
+       playYellow();
+       break;
+   case "green":
+       playGreen();
+       break;
+   // Add more cases if you have additional colors
+}
+}, 100); // Adjust the delay as needed
 
 function playBlue () {
    var blue = new Audio('sounds/blue.mp3')
@@ -33,4 +49,5 @@ function playYellow () {
 function playGreen () {
    var green = new Audio('sounds/green.mp3')
    green.play();
-}
+} 
+} );
