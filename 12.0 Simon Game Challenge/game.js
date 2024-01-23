@@ -141,6 +141,7 @@ function handleAnimatePress(currentColour) {
       }, 100);
 } ) }; 
 
+//allows animation to flash, see related function
 handleAnimatePress()
 
 
