@@ -145,7 +145,3 @@ function handleAnimatePress(currentColour) {
 handleAnimatePress()
 
 
-// $.on("keydown", nextSequence(e)) {
-//    console
-// };
-
