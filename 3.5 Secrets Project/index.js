@@ -2,6 +2,9 @@
 //Make sure you have installed all the dependencies with "npm i".
 //The password is ILoveProgramming
 
+
+
+
 // importing necessary packages 
 
 import express from "express";
@@ -18,7 +21,7 @@ const port = 3000;
 var userIsAuthorised = false;
 
 function passwordCheck(req, res, next) {
-  const password = req.body["password"];
+  const password = req.body["password"]; //referencing the HTML input ID
   if (password === "ILoveProgramming") {
     userIsAuthorised = true;
   }
@@ -40,7 +43,7 @@ app.get("/", (req, res) => { //You want to get a page
 //route handler for HTTP POST requests to the "/check" endpoint. When a POST request is made to this endpoint, 
 //the callback function (req, res) => {...} is executed.
 
-app.post("/check", (req, res) => { // you want to give a page (first parameter from HTML page)
+app.post("/check", (req, res) => { // you want to give a page (first form parameter from HTML page)
   if (userIsAuthorised) {
     res.sendFile(__dirname + "/public/secret.html");
   } else {
