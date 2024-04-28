@@ -25,7 +25,7 @@ function passwordCheck(req, res, next) {
   if (password === "ILoveProgramming") {
     userIsAuthorised = true;
   }
-  next();
+  next(); //make sure to indicate function when to move on
 }
 
 app.use(bodyParser.urlencoded({ extended: true }));
